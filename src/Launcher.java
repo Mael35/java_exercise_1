@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 public class Launcher {
     public static void main(String[] args) {
         System.out.println("Bienvenue");
-        System.out.println("Nouvelle saisie :");
+        System.out.println("\nNouvelle saisie :\n");
 
         java.util.Scanner entree =   new java.util.Scanner(System.in);
         String phrase = entree.nextLine();
@@ -140,8 +140,7 @@ public class Launcher {
                             }
                         }
 
-                        System.out.println("Voici les trois mots les plus frequents du fichier texte :");
-                        System.out.println("" + words[firstID] + " " + words[secondID] + " " + words[thirdID] + "");
+                        System.out.println(words[firstID] + " " + words[secondID] + " " + words[thirdID]);
 
                     }
                 }
@@ -150,8 +149,6 @@ public class Launcher {
                     System.out.println("Unreadable file: ");
                     e.printStackTrace();
                 }
-
-
             }
 
             else
@@ -159,7 +156,7 @@ public class Launcher {
                 System.out.println("Unknown command");
             }
 
-            System.out.println("Nouvelle saisie :");
+            System.out.println("\nNouvelle saisie :\n");
 
             phrase = entree.nextLine();
         }
